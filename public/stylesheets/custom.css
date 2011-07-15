@@ -141,6 +141,11 @@ img {
 	font-size:30px;
 }
 
+input.text {
+	padding:10px !important;
+	height:100px !important;
+}
+
 /* fonts */
 
 @font-face {
