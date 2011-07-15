@@ -1,0 +1,30 @@
+<script type="text/javascript">
+$(document).ready(function() {
+	$('#black').smartpaginator({ totalrecords: <%= @homes.count %>,
+                                       recordsperpage: 6,
+                                       datacontainer: 'divs', 
+                                       dataelement: 'li',
+                                       theme: 'black' });
+
+});
+</script>
+<div id="divs">
+<% @homes.each do |home| %>
+	<div>
+		<ul class="hover_block">
+			<li>
+				<a href="#" data-reveal-id="<%= home.title.gsub(/[\s_]+/, '-').strip %>_modal" data-animation="fadeAndPop" data-animationspeed="300" data-closeonbackgroundclick="true" data-dismissmodalclass="close-reveal-modal"><%= image_tag(home.port.url(:medium), :alt => home.title) %><%= home.description %></a>
+			</li>
+		
+		</ul>
+		<div id="<%= home.title.gsub(/[\s_]+/, '-').strip %>_modal" class="reveal-modal">
+			<%= image_tag(home.port.url(:maxorg), :alt => home.title) %>
+			<%= home.video_url %>
+			<%= home.song_url %>
+		    <br /><b><%= home.title %></b> | <%= home.description %>
+			<a class="close-reveal-modal">&#215;</a>
+		</div>
+	</div>
+<% end %>
+</div>
+<div id="black" style="margin: auto;"></div>

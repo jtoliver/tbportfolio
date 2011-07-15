@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html lang="en-us" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en-us" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en-us" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en-us" class="no-js ie9"> <![endif]-->   
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en-us" class="no-js"> <!--<![endif]-->
+<html>
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1" >
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Toribaa :: Portfolio of Joshua Toliver :: Multimedia Artist/Web Developer</title>
+  <link href='http://fonts.googleapis.com/css?family=Droid+Serif&v1' rel='stylesheet' type='text/css'>
+  <%= stylesheet_link_tag 'columnal' %> 
+  <%= stylesheet_link_tag 'custom' %> 
+  <%= stylesheet_link_tag 'reveal' %> 
+  <%= stylesheet_link_tag 'slider' %> 
+  <%= javascript_include_tag :all %>
+  <%= csrf_meta_tag %>
+  <!-- Fixes for IE -->
+		<!--[if lt IE 9]>
+	    	<link rel="stylesheet" href="css/ie.css" type="text/css" media="screen" />
+		<![endif]-->
+
+	<!-- use "fixed-984px-ie.css" or "fixed-960px-ie.css for a 984px or 960px fixed width for IE6 and 7 -->
+		<!--[if lte IE 7]>
+			<link rel="stylesheet" href="css/fixed-984px-ie.css" type="text/css" media="screen" />
+		<![endif]-->
+	<!-- End fixes for IE -->
+</head>
+<body>
+	<div class="container bodytop mobile-hide">
+		<div class="col_6 pre_6">
+			<ul class="nav">
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Portfolio</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>	
+		</div>
+	</div>
+	<div class="container home">
+		<div class="row">
+			<div class="col_12">
+			</div>
+		</div>
+		<div class="row">
+			<div class="col_8 pre_4 mobile-hide">
+				<h1>Konichiwa</h1>
+				<h2>I am a multimedia-artist <span>/</span> Web Developer</h2>
+			</div>
+		</div>	
+	</div>	
+	<!-- About -->
+	<div class="container about">
+		<div class="row about_title">
+			<div class="col_12">
+				<h1>About</h1>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col_6">
+				<img src="images/me.jpg" />
+			</div>
+			<div class="col_6 last">
+				<p>Hi my name is Josh! I am a Multi-media artist and Web Developer from Columbia, SC. I attended the University of South Carolina 2005 and graduated with a Bachelors in Media Arts in 2007. My expertise range from graphic design, audio design, film, to web design and programming. I currently work at the university. I also freelance. If you have a project email me at josh.me.21@gmail.com or fill out the contact form below.</p>
+
+			</div>			
+		</div>
+	</div>	
+	<!-- Portfolio -->
+	<div class="container portfolio">
+		<div class="row">
+			<div class="col_12">
+				<h1>Portfolio</h1>
+			</div>	
+		</div>
+		<div class="row">
+			<div class="col_12">
+				<%= yield %>
+			</div>		
+		</div>
+	</div>				
+	<!-- Contact -->
+	<div class="container contact">
+		<div class="row">
+			<div class="col_12">
+				<h1>Contact</h1>
+			</div>	
+		</div>
+		<div class="row">
+			<div class="col_6">
+				<p><script type="text/javascript">var host = (("https:" == document.location.protocol) ? "https://secure." : "http://");document.write(unescape("%3Cscript src='" + host + "wufoo.com/scripts/embed/form.js' type='text/javascript'%3E%3C/script%3E"));</script>
+
+				<script type="text/javascript">
+				var z7x3k7 = new WufooForm();
+				z7x3k7.initialize({
+				'userName':'toribaa', 
+				'formHash':'z7x3k7', 
+				'autoResize':true,
+				'height':'654'});
+				z7x3k7.display();
+				</script></p>
+			</div>
+			<div class="col_6 last contactlinks">
+				<ul>
+				<!--<li><a href="#" class="questionaire contactlink"><img src="images/pdf-icon.png"/>Questionaire</a></li>-->
+				<li><a href="#"><img src="images/pdf-icon.png"/>Resume</a></li>
+				<li><a href="www.facebook.com/toribaa"><img src="images/Facebook-icon.png"/>Facebook</a></li>
+				<li><a href="www.twitter.com/toribaa"><img src="images/Twitter-icon.png"/>Twitter</a></li>
+				<li><a href="http://www.linkedin.com/pub/joshua-toliver/15/b3b/8b2"><img src="images/linkedin-icon.png"/>Linkedin</a></li>
+				</ul>
+			</div>		
+		</div>
+	</div>
+	<!-- Footer -->
+	<div class="container footer">
+		<div class="row">
+			<div class="col_6">
+				<h3>Important Info</h3>
+				<a href="http://www.section508.gov/">Section 508 Compliance</a>
+			</div>
+			<div class="col_6 last">
+				<h3>You might find me lurking around</h3>
+				<a href="http://www.smashingmagazine.com">Smashing Magazine</a><br />
+				<a href="http://www.forrst.com/">Forrst</a><br />
+				<a href="http://www.github.com">Github</a><br />
+			</div>		
+		</div>
+		<div class="row">
+			<div class="col_12">
+				&copy Toribaa.com 2011
+			</div>	
+		</div>	
+	</div>					
+</body>
+</html>
